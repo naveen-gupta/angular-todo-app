@@ -1,0 +1,2 @@
+<p><input type="text" placeholder="add todo" [(ngModel)]="title"/><button (click)="addTodoItem()">Add</button></p>
+<li (onclick)="changeStatus(todo.id)" *ngFor="let todo of todos">{{todo.value}}<button (click)="deleteTodoItem(todo.id)">Delete</button></li>
